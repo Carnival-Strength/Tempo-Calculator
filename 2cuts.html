@@ -92,7 +92,7 @@
         var totalTime = (minutes * 60) + seconds;
         var maxAerobicSpeed = distanceMeters / totalTime;
         var tempoRunSpeed = maxAerobicSpeed * 1.3;
-        var yardsIn15Seconds = Math.round(tempoRunSpeed * ((15-(3-1)*.7) / 1.09361)/2); // Rounding to the nearest yard
+        var yardsIn15Seconds = Math.round(tempoRunSpeed * ((15-(3-1)*.7) * 1.09361)/3); // Rounding to the nearest yard
 
         document.getElementById('result').innerText = "Distance for Tempo Run: " + yardsIn15Seconds + " yards";
     }
